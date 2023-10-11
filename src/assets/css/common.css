@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+}
+  
+.column {
+    box-sizing: border-box;
+}
+
+.col-4 {
+    flex: 4;
+}
+
+.col-8 {
+    flex: 8;
+}

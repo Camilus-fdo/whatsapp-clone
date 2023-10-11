@@ -1,0 +1,26 @@
+.root-contact {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(232, 231, 231);
+    padding: 10px 5px 10px 5px;
+}
+
+.root-contact:hover {
+    background-color: #ebebeb;
+}
+
+.root-contact-active {
+    background-color: #ebebeb;
+}
+
+.root-contact__user-info {
+    margin-left: 10px;
+}
+
+.root-contact__last-message {
+    color: grey;
+}
+
+.root-contact__user-name {
+    font-size: 14px;
+}
