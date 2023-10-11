@@ -4,6 +4,7 @@
 ```
 npm install
 ```
+### make .env file and get copy from .env.sample
 ```
 cp .env.sample .env
 ```
