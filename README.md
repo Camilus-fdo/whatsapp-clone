@@ -1,8 +1,17 @@
 # whatsapp
+## Test User Credentials 
+```
+email - ncamiya2@gmail.com
+password - 123456789
+```
 
 ## Project setup
 ```
 npm install
+```
+### make .env file and get copy from .env.sample
+```
+cp .env.sample .env
 ```
 
 ### Compiles and hot-reloads for development
