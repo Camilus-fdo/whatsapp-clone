@@ -1,4 +1,9 @@
 # whatsapp
+## Test User Credentials 
+```
+email - ncamiya2@gmail.com
+password - 123456789
+```
 
 ## Project setup
 ```
