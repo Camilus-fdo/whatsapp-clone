@@ -10,6 +10,45 @@
     flex: 4;
 }
 
+
+
 .col-8 {
     flex: 8;
+}
+
+.toggle-sidebar-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    display: none;
+  }
+
+.show-btn .toggle-sidebar-btn {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .show-side-bar-hidden {
+        display: none;
+    }
+    
+    .show-side-bar {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 300px; /* Adjust the width of the sidebar */
+        height: 100%;
+        background-color: #fff; /* Adjust the background color */
+        transition: left 0.3s ease-out;
+        z-index: 1000;
+    }
+  
+    .col-8 {
+      flex: 1; /* Adjust to take up the whole width */
+    }
+
+    .toggle-sidebar-btn {
+        display: block;
+    }
 }

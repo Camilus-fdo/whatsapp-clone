@@ -1,6 +1,9 @@
 <template>
     <div class="container">
-      <div class="column col-4">
+      <button class="toggle-sidebar-btn" @click="toggleSidebar">
+        <i class="pi pi-align-justify"></i>
+      </button>
+      <div class="column col-4" :class="[isSidebarVisible ? 'show-side-bar' : 'show-side-bar-hidden']">
         <main-side-bar :contactList="usersList"  @openChat="openChat"/>
       </div>
       <div class="column col-8">
@@ -19,6 +22,7 @@ export default {
     },
     data() {
       return {
+        isSidebarVisible: false,
         selectedUser: '',
         usersList: [
           { 
@@ -45,6 +49,10 @@ export default {
     methods:{
       openChat(data) {
         this.selectedUser = data
+      },
+
+      toggleSidebar() {
+        this.isSidebarVisible = !this.isSidebarVisible;
       }
     }
 }
